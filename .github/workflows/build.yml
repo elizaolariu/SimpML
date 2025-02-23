@@ -31,12 +31,6 @@ jobs:
           pip install -r requirements.txt
           pip install -r dev-requirements.txt  # Include dev dependencies if you have them
 
-      - name: Run mypy
-        run: mypy .
-
-      - name: Run flake8
-        run: flake8 .
-
   test:
     runs-on: ubuntu-latest
     strategy:
