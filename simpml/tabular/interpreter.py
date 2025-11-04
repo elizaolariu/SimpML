@@ -1570,7 +1570,7 @@ class TabularInterpreterBinaryClassification(TabularInterpreterClassification):
         assert X is not None
         assert y is not None
 
-        z = metrics.confusion_matrix(y, self.model.predict(X))[::-1]
+        z = metrics.confusion_matrix(y, self.model.predict(X))
         z_prop = ((metrics.confusion_matrix(y, self.model.predict(X)) / len(y)) * 100).astype(int)[
             ::-1
         ]
