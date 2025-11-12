@@ -1050,8 +1050,8 @@ class TabularInterpreterClassification(TabularInterpreterBase):
 
     @default_data_fill
     def plot_confusion_matrix_main_fig(
-        self, 
-        X: Optional[pd.DataFrame] = None, 
+        self,
+        X: Optional[pd.DataFrame] = None,
         y: Optional[pd.Series] = None,
         class_labels: Optional[Dict[int, str]] = None
     ) -> go.Figure:
